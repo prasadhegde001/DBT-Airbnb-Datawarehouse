@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: silver_bookings
+    description: "Silver layer for Airbnb bookings data"
+    columns:
+      - name: booking_id
+        description: "Unique identifier for each booking"
+        tests:
+          - not_null
+          - unique
+
+  - name: silver_hosts
+    description: "Silver layer for Airbnb hosts data"
+    columns:
+      - name: host_id
+        description: "Unique identifier for each hosts"
+        tests:
+          - not_null
+          - unique
+
+  - name: silver_listings
+    description: "Silver layer for Airbnb listings data"
+    columns:
+      - name: listing_id
+        description: "Unique identifier for each listing"
+        tests:
+          - not_null
+          - unique
