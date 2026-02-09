@@ -4,7 +4,7 @@ High-level architecture of the **Bronze → Silver → Gold** medallion pipeline
 
 ---
 
-## Architecture Diagram (Mermaid)
+## Architecture Diagram
 
 ```mermaid
 flowchart TB
