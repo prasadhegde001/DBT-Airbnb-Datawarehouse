@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: stage 
+    database: airbnb     
+    schema: staging    
+    tables:
+      - name: bookings
+      - name: hosts
+      - name: listings
+
+  - name: gold 
+    database: airbnb_data_hub_gold     
+    schema: airbnb_gold_db    
+    tables:
+      - name: control_table
+        description: "Tracks last processed timestamp per Gold table"
