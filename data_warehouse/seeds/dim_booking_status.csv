@@ -1,0 +1,9 @@
+booking_status_key,booking_status,status_category,is_completed,is_active
+1,PENDING,Pre-Stay,false,true
+2,CONFIRMED,Pre-Stay,false,true
+3,CHECKED_IN,In-Stay,false,true
+4,CHECKED_OUT,Post-Stay,true,false
+5,COMPLETED,Post-Stay,true,false
+6,CANCELLED,Cancelled,false,false
+7,NO_SHOW,Cancelled,false,false
+8,REFUNDED,Cancelled,false,false
