@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: bronze_bookings_v1
+    description: "Bronze layer - source layer"
+    tests:
+      - source_bronze_count_match:
+          source_name: stage
+          source_table: bookings
+
+  - name: bronze_hosts_v1
+    description: "Bronze layer - source layer"
+    tests:
+      - source_bronze_count_match:
+          source_name: stage
+          source_table: hosts
+
+  - name: bronze_listings_v1
+    description: "Bronze layer - source layer"
+    tests:
+      - source_bronze_count_match:
+          source_name: stage
+          source_table: listings
